@@ -3208,20 +3208,6 @@ ScriptedImporter:
     spriteID: a87a63135fd1688419ee0b1b0fc62394
     layerID: 43
     mosaicPosition: {x: 633, y: 1311}
-  - name: Right Foot
-    spriteName: Right Foot
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 13e251912616bc1489518fdc4c645622
-    layerID: 42
-    mosaicPosition: {x: 633, y: 1166}
-  - name: Right Hand
-    spriteName: Right Hand
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 938d77e02d3e7674db595513f3ca108f
-    layerID: 41
-    mosaicPosition: {x: 633, y: 1456}
   - name: Left Hand
     spriteName: Left Hand
     isGroup: 0
@@ -3236,6 +3222,20 @@ ScriptedImporter:
     spriteID: 1468e13f0cd32c449bebce27aefb72f7
     layerID: 12
     mosaicPosition: {x: 4, y: 4}
+  - name: Right Foot
+    spriteName: Right Foot
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 13e251912616bc1489518fdc4c645622
+    layerID: 42
+    mosaicPosition: {x: 633, y: 1166}
+  - name: Right Hand
+    spriteName: Right Hand
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 938d77e02d3e7674db595513f3ca108f
+    layerID: 41
+    mosaicPosition: {x: 633, y: 1456}
   - name: Main Head
     spriteName: Main Head
     isGroup: 0
