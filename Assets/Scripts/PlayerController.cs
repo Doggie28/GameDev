@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     public LayerMask groundLayer;
 
+    
     public int jumpForce;
     // Start is called before the first frame update
     //Will be called once
@@ -38,8 +39,11 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce);
         }
         anim.SetFloat("yVelocity", rb.velocity.y);
-        anim.SetBool("Grounded", isGrounded);
+        anim.SetBool("isGrounded", isGrounded);
     }
    
-
+    public void GameOver()
+    {
+        Destroy(gameObject);
+    }
 }//EndClass
