@@ -9,7 +9,10 @@ public class PlayerController : MonoBehaviour
 
     public Animator anim;
     public Rigidbody2D rb;
-    public bool isGrounded = false;
+    public bool isGrounded;
+    public Transform groundPoint;
+
+    public LayerMask groundLayer;
 
     public int jumpForce;
     // Start is called before the first frame update
@@ -19,24 +22,24 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    public void myFunction()
-    {
 
+
+    void FixedUpdate()
+    {
+        isGrounded = Physics2D.OverlapPoint(groundPoint.position, groundLayer);
     }
 
-
-   // Update is called once per frame
+    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true )
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded )
         {
             anim.SetTrigger("Jump");
             rb.AddForce(Vector2.up * jumpForce);
         }
+        anim.SetFloat("yVelocity", rb.velocity.y);
+        anim.SetBool("Grounded", isGrounded);
     }
    
-    void isCollision()
-    {
 
-    }
 }//EndClass
