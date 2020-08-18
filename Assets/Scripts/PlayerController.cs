@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundPoint;
 
     public LayerMask groundLayer;
+    public GameObject deathEffect;
 
     
     public int jumpForce;
@@ -44,6 +45,7 @@ public class PlayerController : MonoBehaviour
    
     public void GameOver()
     {
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }//EndClass

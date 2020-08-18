@@ -16,4 +16,9 @@ public class DeathZone : MonoBehaviour
         cameraa.followPlayer = false;
         player.GameOver();
     }
+
+    public void GameOver()
+    {
+        Destroy(gameObject);
+    }
 }
